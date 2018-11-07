@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-items: space-between;
+
+  position: absolute;
+  top: 10px;   
+}
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav__link {
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  font-family: "Ubuntu"; 
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav__link::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 15px;
+}
+
+.nav__item:first-child .nav__link::before {
+  display: none;
+}
+
+.btn-wrapp {
+  margin-left: 15px;
+}
+.btn {
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #e45028;
+  padding: 10px 10px;
+  border-radius: 5px;
+}

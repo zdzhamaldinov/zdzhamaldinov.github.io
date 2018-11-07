@@ -1,0 +1,60 @@
+@import "./header.scss";
+
+section {
+        height: 100vh;
+}
+
+.hero {
+    background: url(../../img/bg-hero.png) center center / cover no-repeat;
+    
+}
+
+.container {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.content {
+    display: flex;
+    align-content: center;
+
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 72px;
+    line-height: 85px;
+    color: #f9b43b;
+    font-family: "Gagalin";
+
+    &--black {
+        color: #000;
+    }
+}
+
+.hero__desc {
+    font-size: 65px;
+    letter-spacing: -2px;
+    line-height: 60px;
+    color: #fff;
+    font-family: "Lifehack";
+    padding-top: 15px;
+}
+
+.arrow {
+    padding-top: 95px;
+}
