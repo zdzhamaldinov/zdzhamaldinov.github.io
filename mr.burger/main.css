@@ -395,52 +395,52 @@ template {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../fonts/Gagalin-Regular.woff") format("woff");
+  src: url("./fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../fonts/Lifehack-Medium.woff") format("woff");
+  src: url("./fonts/Lifehack-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("./fonts/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("./fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../fonts/Gagalin-Regular.woff") format("woff");
+  src: url("./fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../fonts/Lifehack-Medium.woff") format("woff");
+  src: url("./fonts/Lifehack-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("./fonts/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("./fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 .header {
@@ -512,7 +512,7 @@ section {
   height: 100vh; }
 
 .hero {
-  background: url(../../img/bg-hero.png) center center/cover no-repeat; }
+  background: url(./img/bg-hero.png) center center/cover no-repeat; }
 
 .container {
   width: 940px;
@@ -572,7 +572,7 @@ section {
   padding-top: 95px; }
 
 .beast {
-  background: url(../../img/bg_beast.png) center center/cover no-repeat; }
+  background: url(./img/bg_beast.png) center center/cover no-repeat; }
 
 .beast__list {
   display: -webkit-box;
