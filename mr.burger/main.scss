@@ -7,9 +7,13 @@ $red: #e35028;
 //normalize
 @import "./css/_misc/normalize.scss";
 
+//reset
+@import "./css/_misc/reset.scss";
+
 // setups
 @import "./css/_misc/fonts.scss";
-@import "./css/_misc/fonts.scss";
+@import "./css/blocks/base.scss";
+
 
 
 
@@ -18,3 +22,6 @@ $red: #e35028;
 @import "./css/blocks/hero.scss";
 @import "./css/blocks/beast.scss";
 @import "./css/blocks/review.scss";
+@import "./css/blocks/tiam.scss";
+@import "./css/blocks/menu.scss";
+@import "./css/blocks/contact-form.scss";

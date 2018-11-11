@@ -1,58 +1,48 @@
 @font-face {
 	font-family: 'Gagalin-Regular';
-	src: url('../fonts/Gagalin-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+	src: url(../../fonts/Gagalin/Gagalin-Regular.otf) format('otf');
+	src: url('../../fonts/Gagalin-Regular.woff') format('woff');
+	src: url('../../fonts/Gagalin/Gagalin-Regular.woff2') format('woff2');
+	font-weight: 400;
+	
 }
 
 @font-face {
 	font-family: 'Lifehack-Medium';
-	src: url('../fonts/Lifehack-Medium.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../../fonts/Lifehack/Lifehack\ Medium.otf') format('otf');
+	src: url('../../fonts/Lifehack-Medium.woff') format('woff');
+	src: url('../../fonts/Lifehack/Lifehack-Medium.woff2') format('woff2');
+	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('../fonts/Ubuntu-Light.woff') format('woff');
+	src: url('../../fonts/Ubuntu/Ubuntu-Light.ttf') format('ttf');
+	src: url('../../fonts/Ubuntu/Ubuntu-Light.woff') format('woff');
+	src: url('../../fonts/Ubuntu/Ubuntu-Light.woff2') format('woff2');
 	font-weight: 300;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('../fonts/Ubuntu-Medium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
+	src: url('../../fonts/Ubuntu/Ubuntu-Regular.ttf') format('ttf');
+	src: url('../../fonts/Ubuntu-Light.woff') format('woff');
+	src: url('../../fonts/Ubuntu/Ubuntu.woff2') format('woff2');
+	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('../fonts/ubuntu-b-webfont.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
+	src: url('../../fonts/Ubuntu/Ubuntu-Medium.ttf') format('ttf');
+	src: url('../../fonts/Ubuntu-Medium.woff') format('woff');
+	src: url('../../fonts/Ubuntu/Ubuntu-Medium.woff2') format('woff2');
+	font-weight: 600;
 }
 
-@mixin gagalin() {
-	font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-}
-
-@mixin ubuntu($style: light) {
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-
-	@if $style == light {
-		font-weight: 300;
-	}
-
-	@if $style == medium {
-		font-weight: 500;
-	}
-
-	@if $style == bold {
-		font-weight: bold;
-	}
-}
-
-@mixin lifehack() {
-	font-family: 'Lifehack-Medium';
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../../fonts/Ubuntu/Ubuntu-B.ttf') format('ttf');
+	src: url('../../fonts/Ubuntu/Ubuntu-Bold.woff') format('woff');
+	src: url('../../fonts/Ubuntu/Ubuntu-Bold.woff2') format('woff2');
+	font-weight: 700;
 }

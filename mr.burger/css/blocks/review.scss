@@ -11,14 +11,16 @@
   width: 25%;
   height: 50%;
   filter: grayscale(100%);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 
   &:hover {
-
     .reviews__hover {
       opacity: 1;
     }
-
   }
 }
 
@@ -31,31 +33,24 @@
   background: rgba(#000, .5);
   opacity: 0;
 
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   padding: 10px;
 }
 
 .review__title {
   font-size: 14px;
-  line-height: 28px;
-  color: #fff;
-  font-family: "Gagalin";
+  font-family: "Gagalin-Regular";
 }
 
 .reviewe__text {
-  width: 233px;
-  height: 160px;
   font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
   font-family: "Ubuntu";
   font-weight: 300;
 
-  padding-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 

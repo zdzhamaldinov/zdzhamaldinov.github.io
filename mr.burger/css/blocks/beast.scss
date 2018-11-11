@@ -3,7 +3,6 @@
   background: url(../../img/bg_beast.png) center center / cover no-repeat;
 }
 
-
 .beast__list {
   display: flex;
   margin-top: 55px;
@@ -12,8 +11,8 @@
 .beast__item {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
+  flex: 1;
 }
 
 .beast__img-pic {
@@ -22,18 +21,13 @@
 
 .beast__title {
   font-size: 24px;
-  letter-spacing: -1px;
-  line-height: 28px;
   color: #2f3234;
-  font-family: "Lifehack";
+  font-family: "Lifehack-Medium";
   text-align: center;
 }
 
 .beast__desc {
-  width: 300px;
-  height: 68px;
   font-size: 14px;
-  line-height: 24px;
   color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;

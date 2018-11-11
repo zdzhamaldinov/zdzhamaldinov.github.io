@@ -1,0 +1,80 @@
+.menu { 
+  background: url(../../img/bg-menu.png) center center / cover no-repeat;
+}
+
+.conainer-menu {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.title--menu {
+  margin-top: 110px;
+  margin-left: 90px;
+}
+
+.menu__list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.menu__item {
+  display: flex;
+
+}
+
+.menu__link {
+  width: 80px;
+  font-size: 40px;
+  font-family: "Gagalin-Regular";
+
+    &--img-1 {
+      background: url(../../img/menu-item-bg--1.png) center center / cover no-repeat;
+      
+    }
+    &--img-2 {
+        background: url(../../img/menu-item-bg--2.png) center center / cover no-repeat;
+    }
+    &--img-3 {
+        background: url(../../img/menu-item-bg--3.png) center center / cover no-repeat;
+    }
+}
+
+.menu__link-text {
+  display: flex;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+}
+
+.menu__text-wrapp {
+  background: #000;
+  opacity: .5;
+  width: 0;
+  overflow: hidden;
+
+  &--cheched {
+      width: 540px;
+      background: #000;
+      opacity: .5;
+
+      .menu__link-text {
+        color: #f9b43b;
+
+      }
+  }
+
+}
+
+.menu__text {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 1;
+  padding: 60px 33px;
+}
