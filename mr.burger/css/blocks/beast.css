@@ -1,11 +1,13 @@
 .beast {
-  background: url(../../img/bg_beast.png) center center/cover no-repeat; }
+  background: url(../../img/bg_beast.png) center center/cover no-repeat;
+}
 
 .beast__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 55px; }
+  margin-top: rem(55px);
+}
 
 .beast__item {
   display: -webkit-box;
@@ -20,22 +22,25 @@
           align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+}
 
 .beast__img-pic {
-  padding-bottom: 10px; }
+  padding-bottom: rem(10px);
+}
 
 .beast__title {
-  font-size: 24px;
+  font-size: rem(24px);
   color: #2f3234;
   font-family: "Lifehack-Medium";
-  text-align: center; }
+  text-align: center;
+}
 
 .beast__desc {
-  font-size: 14px;
+  font-size: rem(14px);
   color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;
-  text-align: center; }
-
+  text-align: center;
+}
 /*# sourceMappingURL=beast.css.map */

@@ -1,0 +1,68 @@
+.contact {
+  position: relative;
+  height: 100%;
+  background: url(../../img/map.png) center center/cover no-repeat;
+}
+
+.footer {
+  background: url(../../img/bg-footer.png) center center/cover no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: rem(55px);
+  width: 100%;
+}
+
+.container--footer {
+  width: 100%;
+  max-width: rem(940px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__tel-wrapp {
+  color: #e45028;
+  fill: #e45028;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: rem(10px);
+}
+
+.tel-icon {
+  margin-right: rem(5px);
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  fill: #585858;
+  margin-left: rem(20px);
+}
+
+.social__item:first-child {
+  margin-left: 0;
+}
+
+.social__item:hover {
+  fill: #fff;
+}
+/*# sourceMappingURL=contact.css.map */

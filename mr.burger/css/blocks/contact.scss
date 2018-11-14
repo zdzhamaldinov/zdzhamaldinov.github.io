@@ -1,0 +1,60 @@
+.contact {
+  position: relative;
+  height: 100%;
+  background: url(../../img/map.png) center center / cover no-repeat;
+}
+
+.footer {
+  background: url(../../img/bg-footer.png) center center / cover no-repeat;
+  position: absolute;
+  
+  bottom: 0;
+  height: rem(55px);
+  width: 100%;
+   
+}
+
+.container--footer {
+  width: 100%;
+  max-width: rem(940px);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+
+}
+.footer__tel-wrapp {
+  color: #e45028; 
+  fill: #e45028;
+
+  font-family: "Ubuntu";
+  font-weight: 300;
+
+  display: flex;
+  margin-top: rem(10px);
+
+}
+.tel-icon {
+  margin-right: rem(5px);
+}
+.social__list {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  fill: #585858;
+  margin-left: rem(20px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    fill: #fff;
+  }
+}
+
+.social__item-svg {
+
+}

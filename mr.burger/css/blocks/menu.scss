@@ -9,8 +9,8 @@
 }
 
 .title--menu {
-  margin-top: 110px;
-  margin-left: 90px;
+  margin-top: rem(110px);
+  margin-left: rem(90px);
 }
 
 .menu__list {
@@ -30,8 +30,8 @@
 }
 
 .menu__link {
-  width: 80px;
-  font-size: 40px;
+  width: rem(80px);
+  font-size: rem(40px);
   font-family: "Gagalin-Regular";
 
     &--img-1 {
@@ -59,7 +59,7 @@
   overflow: hidden;
 
   &--cheched {
-      width: 540px;
+      width: rem(540px);
       background: #000;
       opacity: .5;
 
@@ -74,7 +74,7 @@
 .menu__text {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   opacity: 1;
-  padding: 60px 33px;
+  padding: rem(60px) rem(33px);
 }

@@ -5,7 +5,18 @@
 
 .beast__list {
   display: flex;
-  margin-top: 55px;
+  margin-top: rem(55px);
+
+  @include tablets {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  @include phones {
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 .beast__item {
@@ -13,23 +24,27 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  text-align: center;
+
+  @include phones {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .beast__img-pic {
-  padding-bottom: 10px;
+  padding-bottom: rem(10px);
 }
 
 .beast__title {
-  font-size: 24px;
+  font-size: rem(24px);
   color: #2f3234;
   font-family: "Lifehack-Medium";
-  text-align: center;
 }
 
 .beast__desc {
-  font-size: 14px;
+  font-size: rem(14px);
   color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;
-  text-align: center;
 }

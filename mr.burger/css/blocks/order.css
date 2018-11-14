@@ -1,0 +1,127 @@
+.order {
+  background: url(../../img/br-order.png) center center/cover no-repeat;
+}
+
+.order-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__left, .form__right {
+  width: 100%;
+}
+
+.form__left {
+  margin-right: rem(10px);
+}
+
+.form__right {
+  margin-left: rem(10px);
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: rem(20px);
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: rem(15px);
+}
+
+.form__block:last-child {
+  margin-right: rem(0px);
+}
+
+.form__block--radiobutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form__block-title {
+  margin-bottom: rem(5px);
+}
+
+.form__input {
+  width: 100%;
+  height: rem(33px);
+  border-radius: 5px;
+}
+
+.form__input--textarea {
+  height: rem(110px);
+  resize: none;
+}
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+  width: rem(10px);
+  height: rem(10px);
+  border: rem(5px) solid #fff;
+  position: relative;
+  background: #fff;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: rem(0px);
+  right: rem(0px);
+  bottom: rem(0px);
+  left: rem(0px);
+  background: #e35028;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+  border-radius: 50%;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: url(../../icons/check.svg);
+  display: block;
+  position: absolute;
+  top: rem(-2px);
+  right: rem(-14px);
+  bottom: rem(0px);
+  left: rem(0px);
+}
+
+.btn-order {
+  border: none;
+  font-size: rem(13px);
+  color: #fff;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  margin-right: rem(20px);
+}
+
+.btn-order--color-none {
+  font-size: rem(14px);
+  text-transform: none;
+  background-color: transparent;
+}
+/*# sourceMappingURL=order.css.map */

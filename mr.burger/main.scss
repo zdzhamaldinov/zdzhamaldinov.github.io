@@ -11,6 +11,7 @@ $red: #e35028;
 @import "./css/_misc/reset.scss";
 
 // setups
+@import "./css/_misc/mixin.scss";
 @import "./css/_misc/fonts.scss";
 @import "./css/blocks/base.scss";
 
@@ -19,8 +20,11 @@ $red: #e35028;
 
 
 // blocks
+@import "./css/blocks/header.scss";
 @import "./css/blocks/hero.scss";
 @import "./css/blocks/beast.scss";
 @import "./css/blocks/review.scss";
 @import "./css/blocks/tiam.scss";
 @import "./css/blocks/menu.scss";
+@import "./css/blocks/order.scss";
+@import "./css/blocks/contact.scss";

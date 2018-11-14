@@ -1,0 +1,15 @@
+@function rem($px) {
+  @return ($px / 16px) + rem;
+}
+
+@mixin tablets {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
