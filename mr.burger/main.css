@@ -468,39 +468,39 @@ p {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url(../../fonts/Gagalin/Gagalin-Regular.otf) format("otf");
-  src: url("../../fonts/Gagalin-Regular.woff") format("woff");
-  src: url("../../fonts/Gagalin/Gagalin-Regular.woff2") format("woff2");
+  src: url(./fonts/Gagalin/Gagalin-Regular.otf) format("otf");
+  src: url("./fonts/Gagalin-Regular.woff") format("woff");
+  src: url("./fonts/Gagalin/Gagalin-Regular.woff2") format("woff2");
   font-weight: 400; }
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../../fonts/Lifehack/Lifehack Medium.otf") format("otf");
-  src: url("../../fonts/Lifehack-Medium.woff") format("woff");
-  src: url("../../fonts/Lifehack/Lifehack-Medium.woff2") format("woff2");
+  src: url("./fonts/Lifehack/Lifehack Medium.otf") format("otf");
+  src: url("./fonts/Lifehack-Medium.woff") format("woff");
+  src: url("./fonts/Lifehack/Lifehack-Medium.woff2") format("woff2");
   font-weight: 600; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Light.ttf") format("ttf");
-  src: url("../../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
-  src: url("../../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2");
+  src: url("./fonts/Ubuntu/Ubuntu-Light.ttf") format("ttf");
+  src: url("./fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2");
   font-weight: 300; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Regular.ttf") format("ttf");
-  src: url("../../fonts/Ubuntu-Light.woff") format("woff");
-  src: url("../../fonts/Ubuntu/Ubuntu.woff2") format("woff2");
+  src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf") format("ttf");
+  src: url("./fonts/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu/Ubuntu.woff2") format("woff2");
   font-weight: 400; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-Medium.ttf") format("ttf");
-  src: url("../../fonts/Ubuntu-Medium.woff") format("woff");
-  src: url("../../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2");
+  src: url("./fonts/Ubuntu/Ubuntu-Medium.ttf") format("ttf");
+  src: url("./fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("./fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2");
   font-weight: 600; }
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu/Ubuntu-B.ttf") format("ttf");
-  src: url("../../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
-  src: url("../../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2");
+  src: url("./fonts/Ubuntu/Ubuntu-B.ttf") format("ttf");
+  src: url("./fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+  src: url("./fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2");
   font-weight: 700; }
 html {
   font-size: 16px; }
@@ -637,7 +637,7 @@ a {
       margin-right: 1.875rem; } }
 
 .hero {
-  background: url(../../img/bg-hero.png) center center/cover no-repeat; }
+  background: url(./img/bg-hero.png) center center/cover no-repeat; }
 
 .hero-content {
   display: -webkit-box;
@@ -711,7 +711,7 @@ a {
   margin-bottom: 2.1875rem; }
 
 .beast {
-  background: url(../../img/bg_beast.png) center center/cover no-repeat; }
+  background: url(./img/bg_beast.png) center center/cover no-repeat; }
 
 .beast__list {
   display: -webkit-box;
@@ -986,7 +986,7 @@ a {
   font-weight: 300; }
 
 .menu {
-  background: url(../../img/bg-menu.png) center center/cover no-repeat; }
+  background: url(./img/bg-menu.png) center center/cover no-repeat; }
 
 .conainer-menu {
   height: 100%;
@@ -1022,11 +1022,11 @@ a {
   font-size: 2.5rem;
   font-family: "Gagalin-Regular"; }
   .menu__link--img-1 {
-    background: url(../../img/menu-item-bg--1.png) center center/cover no-repeat; }
+    background: url(./img/menu-item-bg--1.png) center center/cover no-repeat; }
   .menu__link--img-2 {
-    background: url(../../img/menu-item-bg--2.png) center center/cover no-repeat; }
+    background: url(./img/menu-item-bg--2.png) center center/cover no-repeat; }
   .menu__link--img-3 {
-    background: url(../../img/menu-item-bg--3.png) center center/cover no-repeat; }
+    background: url(./img/menu-item-bg--3.png) center center/cover no-repeat; }
 
 .menu__link-text {
   display: -webkit-box;
@@ -1056,7 +1056,7 @@ a {
   padding: 3.75rem 2.0625rem; }
 
 .order {
-  background: url(../../img/br-order.png) center center/cover no-repeat; }
+  background: url(./img/br-order.png) center center/cover no-repeat; }
 
 .order-form {
   width: 100%;
@@ -1195,7 +1195,7 @@ a {
   border-radius: 50%; }
 
 .checkbox:checked + .checkbox-custom::before {
-  content: url(../../icons/check.svg);
+  content: url(./icons/check.svg);
   display: block;
   position: absolute;
   top: -0.125rem;
@@ -1218,10 +1218,10 @@ a {
 .contact {
   position: relative;
   height: 100%;
-  background: url(../../img/map.png) center center/cover no-repeat; }
+  background: url(./img/map.png) center center/cover no-repeat; }
 
 .footer {
-  background: url(../../img/bg-footer.png) center center/cover no-repeat;
+  background: url(./img/bg-footer.png) center center/cover no-repeat;
   position: absolute;
   bottom: 0;
   height: 3.4375rem;
