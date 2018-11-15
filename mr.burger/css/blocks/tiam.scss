@@ -30,11 +30,11 @@
 
 .team__list {
   margin-top: rem(40px);
+  
+
 }
 
 .team_item {
-  list-style-type: none;
-
   display: flex;
   align-content: center;
   position: relative;
@@ -55,8 +55,13 @@
       margin-right: rem(9px); 
   }  
 
+  &--checked {
+    &::before {
+      transform: rotate(180deg);
+    }  
+  }
+
   @include tablets {
-    justify-content: center;
     margin-left: 0;
     margin-right: 0;
   }
@@ -65,6 +70,12 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.team__content-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-content: center
 }
 
 .team__title{
@@ -122,6 +133,7 @@
   
   @include phones {
     margin-left: 0;
+    position: relative;
   }
 }
 .team__position {
@@ -138,5 +150,18 @@
   font-size: rem(14px);
   font-family: "Ubuntu";
   font-weight: 300;
+
+}
+.team__position, .team__desc {
+  
+  @include phones {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5%;
+  }
 
 }

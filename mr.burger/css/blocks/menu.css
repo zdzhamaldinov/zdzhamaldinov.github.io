@@ -1,19 +1,16 @@
 .menu {
-  background: url(./img/bg-menu.png) center center/cover no-repeat;
-}
+  background: url(./img/bg-menu.png) center center/cover no-repeat; }
 
 .conainer-menu {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-}
+  position: relative; }
 
 .title--menu {
   margin-top: rem(110px);
-  margin-left: rem(90px);
-}
+  margin-left: rem(90px); }
 
 .menu__list {
   position: absolute;
@@ -26,32 +23,29 @@
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-}
+          justify-content: flex-end; }
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-}
+  display: flex; }
 
 .menu__link {
   width: rem(80px);
   font-size: rem(40px);
   font-family: "Gagalin-Regular";
-}
-
-.menu__link--img-1 {
-  background: url(./img/menu-item-bg--1.png) center center/cover no-repeat;
-}
-
-.menu__link--img-2 {
-  background: url(./img/menu-item-bg--2.png) center center/cover no-repeat;
-}
-
-.menu__link--img-3 {
-  background: url(./img/menu-item-bg--3.png) center center/cover no-repeat;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .menu__link--img-1 {
+    background: url(./img/menu-item-bg--1.png) center center/cover no-repeat; }
+  .menu__link--img-2 {
+    background: url(./img/menu-item-bg--2.png) center center/cover no-repeat; }
+  .menu__link--img-3 {
+    background: url(./img/menu-item-bg--3.png) center center/cover no-repeat; }
 
 .menu__link-text {
   display: -webkit-box;
@@ -60,30 +54,26 @@
   white-space: nowrap;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-}
+  width: 100%;
+  margin-bottom: rem(50px); }
 
 .menu__text-wrapp {
   background: #000;
   opacity: .5;
   width: 0;
-  overflow: hidden;
-}
-
-.menu__text-wrapp--cheched {
-  width: rem(540px);
-  background: #000;
-  opacity: .5;
-}
-
-.menu__text-wrapp--cheched .menu__link-text {
-  color: #f9b43b;
-}
+  overflow: hidden; }
+  .menu__text-wrapp--cheched {
+    width: rem(540px);
+    background: #000;
+    opacity: .5; }
+    .menu__text-wrapp--cheched .menu__link-text {
+      color: #f9b43b; }
 
 .menu__text {
   font-family: 'Ubuntu';
   font-weight: 300;
   font-size: rem(14px);
   opacity: 1;
-  padding: rem(60px) rem(33px);
-}
+  padding: rem(60px) rem(33px); }
+
 /*# sourceMappingURL=menu.css.map */

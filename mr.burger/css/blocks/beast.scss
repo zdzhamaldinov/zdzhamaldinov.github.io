@@ -32,6 +32,17 @@
   }
 }
 
+.best__text {
+
+  @include phones {
+    margin-left: rem(30px);
+    margin-top: rem(50px);
+
+    
+  }
+}
+
+
 .beast__img-pic {
   padding-bottom: rem(10px);
 }
