@@ -1,6 +1,6 @@
 
 .beast {
-  background: url(../../img/bg_beast.png) center center / cover no-repeat;
+  background: url(./img/bg_beast.png) center center / cover no-repeat;
 }
 
 .beast__list {
@@ -40,10 +40,19 @@
   font-size: rem(24px);
   color: #2f3234;
   font-family: "Lifehack-Medium";
+
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  @include phones {
+  margin-top: 0;
+  }
+
 }
 
 .beast__desc {
   font-size: rem(14px);
+  line-height: rem(24px);
   color: #2f3234;
   font-family: "Ubuntu";
   font-weight: 300;

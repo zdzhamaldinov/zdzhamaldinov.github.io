@@ -1,5 +1,5 @@
 .menu {
-  background: url(../../img/bg-menu.png) center center/cover no-repeat;
+  background: url(./img/bg-menu.png) center center/cover no-repeat;
 }
 
 .conainer-menu {
@@ -42,15 +42,15 @@
 }
 
 .menu__link--img-1 {
-  background: url(../../img/menu-item-bg--1.png) center center/cover no-repeat;
+  background: url(./img/menu-item-bg--1.png) center center/cover no-repeat;
 }
 
 .menu__link--img-2 {
-  background: url(../../img/menu-item-bg--2.png) center center/cover no-repeat;
+  background: url(./img/menu-item-bg--2.png) center center/cover no-repeat;
 }
 
 .menu__link--img-3 {
-  background: url(../../img/menu-item-bg--3.png) center center/cover no-repeat;
+  background: url(./img/menu-item-bg--3.png) center center/cover no-repeat;
 }
 
 .menu__link-text {

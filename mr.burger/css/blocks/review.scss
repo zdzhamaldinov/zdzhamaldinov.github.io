@@ -47,7 +47,7 @@
   flex-direction: column;
   justify-content: center;
 
-  padding: rem(10px);
+  padding: 10%;
 
   
   @include tablets {
@@ -66,13 +66,17 @@
 
 .reviewe__text {
   font-size: rem(14px);
+  line-height: rem(24px);
   font-family: "Ubuntu";
   font-weight: 300;
 
-  margin-bottom: rem(20px);
-  margin-top: rem(30px);
+  margin-top: 8%;
+  margin-bottom: 5%;
   
-   
+  @include tablets {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
 
   @include phones {
     display: none;

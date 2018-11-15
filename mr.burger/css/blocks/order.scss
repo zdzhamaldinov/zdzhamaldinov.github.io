@@ -1,19 +1,22 @@
 .order{
-  background: url(../../img/br-order.png) center center / cover no-repeat;
+  background: url(./img/br-order.png) center center / cover no-repeat;
 }
 
 .order-form {
   width: 100%;
   display: flex;
+  margin-top: rem(50px);
    
   @include tablets {
     flex-direction: column;
     align-items: center;
+    margin-top: rem(40px);
   }
    
   @include phones {
     flex-direction: column;
     align-items: center;
+    margin-top: rem(40px);
   }
 }
 
@@ -53,6 +56,14 @@
   }
 }
 
+.form__right .form__row:not(:first-child) {
+
+  @include phones {
+    justify-content: center;
+    margin-top: rem(35px);
+  }
+
+}
 
 .form__row {
   display: flex;
@@ -145,7 +156,7 @@
 
 .checkbox:checked + .checkbox-custom::before,
  {
-	content: url(../../icons/check.svg);
+	content: url(./icons/check.svg);
 	display: block;
 	position: absolute;
 	top: rem(-2px);

@@ -1,16 +1,20 @@
 .contact {
   position: relative;
   height: 100%;
-  background: url(../../img/map.png) center center / cover no-repeat;
+  background: url(./img/map.png) center center / cover no-repeat;
 }
 
 .footer {
-  background: url(../../img/bg-footer.png) center center / cover no-repeat;
+  background: url(./img/bg-footer.png) center center / cover no-repeat;
   position: absolute;
   
   bottom: 0;
   height: rem(55px);
   width: 100%;
+  @include phones {
+    height: rem(115px);
+
+  }
    
 }
 
@@ -22,6 +26,22 @@
   align-content: center;
   justify-content: space-between;
 
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+}
+
+.footer__tel-wrapp {
+  
+  @include phones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
 }
 .footer__tel-wrapp {
   color: #e45028; 
@@ -40,6 +60,11 @@
 .social__list {
   display: flex;
   align-items: center;
+
+  @include phones {
+    margin-top: rem(15px);
+
+  }
 }
 
 .social__item {
