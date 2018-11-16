@@ -769,6 +769,7 @@ a {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-bottom: 6.25rem;
 }
 
 @media (max-width: 768px) {
@@ -1366,6 +1367,10 @@ a {
   margin-bottom: 3.125rem;
 }
 
+.menu__link-text--checked {
+  color: #f9b43b;
+}
+
 .menu__text-wrapp {
   background: #000;
   opacity: .5;
@@ -1379,16 +1384,13 @@ a {
   opacity: .5;
 }
 
-.menu__text-wrapp--cheched .menu__link-text {
-  color: #f9b43b;
-}
-
 .menu__text {
   font-family: 'Ubuntu';
   font-weight: 300;
+  line-height: 1.5rem;
   font-size: 0.875rem;
   opacity: 1;
-  padding: 3.75rem 2.0625rem;
+  padding: 3.75rem 10%;
 }
 
 .order {
@@ -1625,7 +1627,6 @@ a {
 
 .contact {
   position: relative;
-  height: 100%;
   background: url(./img/map.png) center center/cover no-repeat;
 }
 

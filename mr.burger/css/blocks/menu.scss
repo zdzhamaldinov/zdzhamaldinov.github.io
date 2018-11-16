@@ -53,6 +53,10 @@
   transform: rotate(-90deg);
   width: 100%;
   margin-bottom: rem(50px);
+
+  &--checked {
+    color: #f9b43b;
+  }
 }
 
 .menu__text-wrapp {
@@ -65,11 +69,6 @@
       width: rem(540px);
       background: #000;
       opacity: .5;
-
-      .menu__link-text {
-        color: #f9b43b;
-
-      }
   }
 
 }
@@ -77,7 +76,8 @@
 .menu__text {
   font-family: 'Ubuntu';
   font-weight: 300;
+  line-height: rem(24px);
   font-size: rem(14px);
   opacity: 1;
-  padding: rem(60px) rem(33px);
+  padding: rem(60px) 10%;
 }
