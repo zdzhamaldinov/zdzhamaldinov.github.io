@@ -795,12 +795,8 @@ a {
   }
 }
 
-.hero-text, .hero__img {
-  width: 100%;
-}
-
-.hero__burger-pic {
-  width: 100%;
+.hero__text, .hero__img {
+  width: 50%;
 }
 
 @media (max-width: 768px) {
