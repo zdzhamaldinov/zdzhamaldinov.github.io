@@ -53,17 +53,20 @@ min-height: rem(650px);
   &--hero {
     margin-bottom: rem(30px);
     margin-top: rem(70px);
+    text-align: left;
   }
 
   @include tablets {
     margin-top: 0;
     margin-bottom: rem(20px);
+    text-align: center;
 
   }
   @include phones {
     font-size: rem(63px);
     margin-top: 0;
     margin-bottom: rem(20px);
+    text-align: center;
 
   }
 }

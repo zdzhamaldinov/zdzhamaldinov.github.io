@@ -56,7 +56,13 @@
 }
 .tel-icon {
   margin-right: rem(5px);
+
+  &-svg {
+    width: 10px;
+    height: 10px;
+  }
 }
+
 .social__list {
   display: flex;
   align-items: center;
@@ -78,8 +84,9 @@
   &:hover {
     fill: #fff;
   }
-}
 
-.social__item-svg {
-
+  &-svg {
+    width: 25px;
+    height: 20px;
+  }
 }

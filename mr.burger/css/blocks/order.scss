@@ -166,6 +166,7 @@
 }
 
 .btn-order {
+  cursor: pointer;
   border: none;
   font-size: rem(13px);
   color: #fff;
@@ -176,6 +177,10 @@
   &--color-none {
     font-size: rem(14px);
     text-transform: none;
+    background-color: transparent;
+  }
+
+  &--color-none:hover {
     background-color: transparent;
   }
 }

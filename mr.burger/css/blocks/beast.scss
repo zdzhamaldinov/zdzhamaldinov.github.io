@@ -14,6 +14,7 @@
   
   @include phones {
     flex-direction: column;
+    margin-top: rem(35px);
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -37,11 +38,19 @@
   @include phones {
     margin-left: rem(30px);
     margin-top: rem(50px);
+  }
 
-    
+  &--margin-top-none {
+    @include phones {
+      margin-top: 0;
+    }
   }
 }
 
+.beast__img-svg {
+  width: rem(110px);
+  height: rem(110px);
+}
 
 .beast__img-pic {
   padding-bottom: rem(10px);

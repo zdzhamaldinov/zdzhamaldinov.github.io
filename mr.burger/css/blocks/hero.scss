@@ -21,7 +21,7 @@
 
 }
 
-.hero-content, .hero__img {
+.hero-text, .hero__img {
     width: 100%;
 }
 
@@ -64,8 +64,14 @@
 
 .arrow {
     margin-bottom: rem(35px);
+    display: block;
     
     @include phones {
         margin-bottom: rem(30px);
+    }
+
+    &-svg {
+        width: 30px;
+        height: 18px;
     }
 }
