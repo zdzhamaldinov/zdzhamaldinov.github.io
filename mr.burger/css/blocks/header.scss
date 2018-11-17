@@ -65,8 +65,12 @@
     background: #c84623;
   }
 
-  &--magin-left {
+  &--header {
     margin-left: rem(15px);
+  
+    @include phones {
+        display: none;
+    }
   }
 
   &--flex-start {
@@ -86,4 +90,17 @@
   @include phones {
       margin-right: rem(30px);
   }
+}
+
+.humb-button-pic {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+
+  @include phones {
+    display: block;    
+  }
+
 }
