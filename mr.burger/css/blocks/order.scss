@@ -100,6 +100,7 @@
     display: flex;
     flex: auto;
     justify-content: center;
+    word-wrap: break-word;
   }
 }
 
@@ -133,9 +134,9 @@
 
 .checkbox-custom,
 .radio-custom {
-	width: rem(7px);
-	height: rem(7px);
-	border: rem(4px) solid #fff;
+	width: rem(16px);
+	height: rem(16px);
+	border: rem(7px) solid #fff;
   position: relative;
   background: #fff;
 }
@@ -147,16 +148,16 @@
 	vertical-align: middle;
 }
 
-
 .radio:checked + .radio-custom::before {
 	content: "";
 	display: block;
-	position: absolute;
-	top: rem(0px);
-	right: rem(0px);
-	bottom: rem(0px);
-	left: rem(0px);
-	background: #e35028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e35028;
+  width: rem(8px);
+  height: rem(8px);
 }
 .radio-custom,
 .radio:checked + .radio-custom::before {
@@ -170,10 +171,9 @@
 	content: url(./icons/check.svg);
 	display: block;
 	position: absolute;
-	top: rem(-2px);
-	right: rem(-14px);
-	bottom: rem(0px);
-	left: rem(0px);
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-order {

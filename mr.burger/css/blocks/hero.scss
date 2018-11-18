@@ -1,14 +1,5 @@
-
 .hero {
     background: url(./img/bg-hero.png) center center / cover no-repeat;
-
-    @include tablets {
-        padding: 0 5%;
-    }
-    
-    @include phones {
-        padding: 0 5%;
-    }
 }
 
 .hero-content {
@@ -27,16 +18,17 @@
     width: 50%;
 
     @include tablets {
-        width: 80%;
+        width: 65%;
     }
 
-    @include tablets {
+    @include phones {
         width: 100%;
     }
 }
 
 .hero__burger-pic {
     width: 100%;
+    max-width: 100%;
     
     @include tablets {
         align-items: center;
@@ -50,7 +42,7 @@
     margin-left: rem(5px);
     
     @include tablets {
-
+        width: 80%;
         margin-left: 0;
         margin-top: rem(40px)
     }
@@ -60,6 +52,9 @@
     font-size: rem(65px);
     font-family: "Lifehack-Medium";
 
+    @include phones {
+        font-size: rem(48px);
+    }
 }
 
 .arrow {

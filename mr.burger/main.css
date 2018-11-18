@@ -502,6 +502,12 @@ p {
   src: url("./fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
   src: url("./fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2");
   font-weight: 700; }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 html {
   font-size: 16px; }
   @media (max-width: 768px) {
@@ -563,13 +569,11 @@ a {
     .title {
       margin-top: 0;
       margin-bottom: 1.25rem;
-      text-align: center; } }
+      text-align: center;
+      font-size: 4.4375rem; } }
   @media (max-width: 480px) {
     .title {
-      font-size: 3.9375rem;
-      margin-top: 0;
-      margin-bottom: 1.25rem;
-      text-align: center; } }
+      font-size: 3.1875rem; } }
 
 .header {
   display: -webkit-box;
@@ -661,12 +665,6 @@ a {
 
 .hero {
   background: url(./img/bg-hero.png) center center/cover no-repeat; }
-  @media (max-width: 768px) {
-    .hero {
-      padding: 0 5%; } }
-  @media (max-width: 480px) {
-    .hero {
-      padding: 0 5%; } }
 
 .hero-content {
   display: -webkit-box;
@@ -688,13 +686,14 @@ a {
   width: 50%; }
   @media (max-width: 768px) {
     .hero__text, .hero__img {
-      width: 80%; } }
-  @media (max-width: 768px) {
+      width: 65%; } }
+  @media (max-width: 480px) {
     .hero__text, .hero__img {
       width: 100%; } }
 
 .hero__burger-pic {
-  width: 100%; }
+  width: 100%;
+  max-width: 100%; }
   @media (max-width: 768px) {
     .hero__burger-pic {
       -webkit-box-align: center;
@@ -715,12 +714,16 @@ a {
   margin-left: 0.3125rem; }
   @media (max-width: 768px) {
     .hero__text {
+      width: 80%;
       margin-left: 0;
       margin-top: 2.5rem; } }
 
 .hero__desc {
   font-size: 4.0625rem;
   font-family: "Lifehack-Medium"; }
+  @media (max-width: 480px) {
+    .hero__desc {
+      font-size: 3rem; } }
 
 .arrow {
   margin-bottom: 2.1875rem; }
@@ -883,7 +886,9 @@ a {
   @media (max-width: 768px) {
     .reviewe__text {
       margin-top: 8%;
-      margin-bottom: 5%; } }
+      margin-bottom: 5%;
+      font-size: 0.8125rem;
+      line-height: 1.3; } }
   @media (max-width: 480px) {
     .reviewe__text {
       display: none; } }
@@ -911,11 +916,11 @@ a {
   position: relative; }
 
 .team__container {
+  position: absolute;
   height: 100%;
   width: 50%;
-  background: rgba(0, 0, 0, 0.75);
-  position: absolute;
   margin-left: 50%;
+  background: rgba(0, 0, 0, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,7 +938,8 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding: 0 3%; } }
 
 .team__list {
   margin-top: 2.5rem; }
@@ -1235,7 +1241,8 @@ a {
               flex: auto;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      word-wrap: break-word; } }
   .form__block--radiobutton {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1264,9 +1271,9 @@ a {
 
 .checkbox-custom,
 .radio-custom {
-  width: 0.4375rem;
-  height: 0.4375rem;
-  border: 0.25rem solid #fff;
+  width: 1rem;
+  height: 1rem;
+  border: 0.4375rem solid #fff;
   position: relative;
   background: #fff; }
 
@@ -1280,11 +1287,13 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 0rem;
-  right: 0rem;
-  bottom: 0rem;
-  left: 0rem;
-  background: #e35028; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #e35028;
+  width: 0.5rem;
+  height: 0.5rem; }
 
 .radio-custom,
 .radio:checked + .radio-custom::before {
@@ -1294,10 +1303,10 @@ a {
   content: url(./icons/check.svg);
   display: block;
   position: absolute;
-  top: -0.125rem;
-  right: -0.875rem;
-  bottom: 0rem;
-  left: 0rem; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .btn-order {
   cursor: pointer;
@@ -1333,6 +1342,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 768px) {
+    .container--footer {
+      font-size: 0.875rem; } }
   @media (max-width: 480px) {
     .container--footer {
       -webkit-box-orient: vertical;
@@ -1366,8 +1378,8 @@ a {
 .tel-icon {
   margin-right: 0.3125rem; }
   .tel-icon-svg {
-    width: 10px;
-    height: 10px; }
+    width: 13px;
+    height: 13px; }
 
 .social__list {
   display: -webkit-box;
