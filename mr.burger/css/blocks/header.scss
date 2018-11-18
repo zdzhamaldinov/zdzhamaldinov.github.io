@@ -61,6 +61,9 @@
   border-radius: rem(5px);
   opacity: 1;
 
+  font-family: "Ubuntu";
+  font-weight: 600;
+
   &:hover {
     background: #c84623;
   }
@@ -82,14 +85,6 @@
   &--color-for-black {
     background: rgb(63, 43, 41);
   }
-   
-  @include tablets {
-      margin-right: rem(30px);
-  }
-
-  @include phones {
-      margin-right: rem(30px);
-  }
 }
 
 .humb-button-pic {
@@ -97,10 +92,6 @@
 
   @include tablets {
     display: block;
+    margin-left: rem(30px);
   }
-
-  @include phones {
-    display: block;    
-  }
-
 }

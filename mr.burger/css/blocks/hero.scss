@@ -13,30 +13,24 @@
 
 .hero-content {
     display: flex;
-    align-content: center;
+    align-items: center;
     padding-bottom: rem(100px);
     
     @include tablets {
         flex-direction: column;
-        align-content: center;
         text-align: center;
     }
     
-    @include phones {
-        flex-direction: column;
-        align-content: center;
-        text-align: center;
-    }
 }
 
 .hero__text, .hero__img {
     width: 50%;
 
     @include tablets {
-        width: 100%;
+        width: 80%;
     }
-    
-    @include phones {
+
+    @include tablets {
         width: 100%;
     }
 }
@@ -45,12 +39,6 @@
     width: 100%;
     
     @include tablets {
-        width: 50%;
-        align-items: center;
-    }
-
-    @include phones {
-        width: 75%;
         align-items: center;
     }
 }
@@ -88,7 +76,6 @@
     &__link {
         
     display: block;
-    overflow: hidden;
     
     }
 }

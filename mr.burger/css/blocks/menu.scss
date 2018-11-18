@@ -27,6 +27,18 @@
 .menu__item {
   display: flex;
 
+    &--checked {
+      
+      .menu__link-text {
+        color: #f9b43b;
+      }
+
+      .menu__text-wrapp {
+        width: rem(540px);
+        background: #000;
+        opacity: .5;
+      }
+  }
 }
 
 .menu__link {
@@ -64,12 +76,6 @@
   opacity: .5;
   width: 0;
   overflow: hidden;
-
-  &--cheched {
-      width: rem(540px);
-      background: #000;
-      opacity: .5;
-  }
 
 }
 

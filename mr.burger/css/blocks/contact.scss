@@ -10,21 +10,12 @@
   position: absolute;
   
   bottom: 0;
-  height: rem(55px);
-  width: 100%;
-  @include phones {
-    height: rem(115px);
-
-  }
-   
+  padding: rem(15px) 0;
+  width: 100%;   
 }
 
 .container--footer {
-  width: 100%;
-  max-width: rem(940px);
-  display: flex;
   flex-direction: row;
-  align-content: center;
   justify-content: space-between;
 
   @include phones {
@@ -75,19 +66,23 @@
 }
 
 .social__item {
-  fill: #585858;
   margin-left: rem(20px);
 
   &:first-child {
     margin-left: 0;
   }
 
-  &:hover {
-    fill: #fff;
-  }
 
   &-svg {
     width: 25px;
     height: 20px;
+    fill: #585858;
   }
+  &-svg:hover {
+    fill: #fff;
+  }
+}
+
+.social__link {
+  display: block;
 }
