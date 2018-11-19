@@ -35,6 +35,16 @@
   display: flex;
 }
 
+.menu__item--checked .menu__link-text {
+  color: #f9b43b;
+}
+
+.menu__item--checked .menu__text-wrapp {
+  width: rem(540px);
+  background: #000;
+  opacity: .5;
+}
+
 .menu__link {
   width: rem(80px);
   font-size: rem(40px);
@@ -79,12 +89,6 @@
   opacity: .5;
   width: 0;
   overflow: hidden;
-}
-
-.menu__text-wrapp--cheched {
-  width: rem(540px);
-  background: #000;
-  opacity: .5;
 }
 
 .menu__text {

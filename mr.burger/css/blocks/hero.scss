@@ -33,6 +33,9 @@
     @include tablets {
         align-items: center;
     }
+    @include phones {
+        width: 90%;
+    }
 }
 
 .hero__text {
