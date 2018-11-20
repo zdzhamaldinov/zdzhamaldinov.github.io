@@ -112,3 +112,19 @@
         font-size: 30px;
     }
 }
+
+.infoblock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+    &--ccal {
+        left: none;
+        right: 0;
+    }
+}
+
+.infoblock__text {
+    font-family: 'Gagalin-Regular';
+}
