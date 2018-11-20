@@ -576,6 +576,49 @@ a {
     .title {
       font-size: 3.1875rem; } }
 
+.hamburger-menu {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: none; }
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      margin-left: 1.875rem; } }
+  .hamburger-menu--checked {
+    z-index: 100; }
+    .hamburger-menu--checked .hamburger-menu__line::before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .hamburger-menu--checked .hamburger-menu__line::after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .hamburger-menu--checked .hamburger-menu__line {
+      width: 0; }
+
+.hamburger-menu__line,
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 20px;
+  background: #c1c2c2;
+  border-radius: 1px; }
+
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  content: ''; }
+
+.hamburger-menu__line::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
+
+.hamburger-menu__line::after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px); }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,13 +698,6 @@ a {
         align-self: flex-start; }
   .btn--color-for-black {
     background: #3f2b29; }
-
-.humb-button-pic {
-  display: none; }
-  @media (max-width: 768px) {
-    .humb-button-pic {
-      display: block;
-      margin-left: 1.875rem; } }
 
 .hero {
   background: url(./img/bg-hero.png) center center/cover no-repeat; }
@@ -1414,7 +1450,7 @@ a {
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 45%, #f9b43b 75%); }
 
 .scroll-btn {
-  display: inline-block;
+  display: block;
   cursor: pointer;
   z-index: 99; }
   .scroll-btn--next, .scroll-btn--prev {
@@ -1482,7 +1518,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 16px 0; }
+  padding-top: 50px; }
   .burger__photo__img {
     max-width: 100%; }
 
@@ -1519,6 +1555,21 @@ a {
     font-size: 70px; }
   .burger__price--text {
     font-size: 30px; }
+
+.infoblock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 25px;
+  background: #f08c33;
+  text-align: center;
+  border-radius: 5px; }
+  .infoblock--ccal {
+    background: transparent;
+    top: 90%; }
+
+.infoblock__text {
+  font-family: 'Gagalin-Regular'; }
 
 .mobile-menu {
   background: rgba(0, 0, 0, 0.95);

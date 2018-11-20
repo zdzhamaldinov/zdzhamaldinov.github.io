@@ -1,0 +1,55 @@
+.hamburger-menu {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: none;
+  
+   @include tablets {
+     display: block;
+     margin-left: rem(30px);
+    }
+  
+
+  &--checked {
+    z-index: 100;
+
+    .hamburger-menu__line::before {
+      transform: rotate(45deg);
+    }
+    
+    .hamburger-menu__line::after {
+      transform: rotate(-45deg);
+    }
+    
+    .hamburger-menu__line {
+      width: 0;
+    }
+    
+    
+  }
+}
+
+.hamburger-menu__line,
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  width: 20px;
+  background: #c1c2c2;
+  border-radius: 1px;
+}
+
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  content: '';
+}
+
+.hamburger-menu__line::before {
+  transform: translateY(-5px);
+}
+
+.hamburger-menu__line::after {
+  transform: translateY(5px);
+}

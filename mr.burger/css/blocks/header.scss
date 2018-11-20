@@ -86,11 +86,3 @@
   }
 }
 
-.humb-button-pic {
-  display: none;
-
-  @include tablets {
-    display: block;
-    margin-left: rem(30px);
-  }
-}
