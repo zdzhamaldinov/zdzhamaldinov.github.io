@@ -2,6 +2,13 @@
     background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 45%, #f9b43b 75%);
 }
 
+.container--burgers{
+    padding: 0 2%;
+    @include tablets {
+        padding: 0 8%;
+    }
+}
+
 .scroll-btn {
     display: block;
     cursor: pointer;
@@ -70,16 +77,29 @@
     align-items: center;
     padding: 0 1.5rem;
     position: relative;
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .burger__photo {
     flex: 1;
     padding-top: 50px;
 
-    &__img {
-        max-width: 100%;
+    @include phones{
+        padding-top: 100px;
     }
 }
+
+.burger__img {
+    max-width: 100%;
+
+    @include tablets {
+        max-width: 80%;
+    }
+}
+
 
 .btn--burger {
     display: inline-block;
@@ -88,16 +108,24 @@
 }
 
 .burger__desc {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     margin-left: 15px;
+    
+    @include tablets {
+        flex: auto;
+    }
 }
 
 .burger__order {
     display: flex;
     align-items: baseline;
+    @include tablets {
+    justify-content: center;
+    }
 }
 
 .burger__price {
@@ -125,6 +153,12 @@
     &--ccal {
         background: transparent;
         top: 90%;
+        @include tablets {
+            top: 0;
+            right: 0;
+            left: auto;
+            
+        }
     }
 }
 

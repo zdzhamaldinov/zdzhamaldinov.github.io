@@ -1449,6 +1449,12 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(45%, #eb8c38), color-stop(75%, #f9b43b));
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 45%, #f9b43b 75%); }
 
+.container--burgers {
+  padding: 0 2%; }
+  @media (max-width: 768px) {
+    .container--burgers {
+      padding: 0 8%; } }
+
 .scroll-btn {
   display: block;
   cursor: pointer;
@@ -1513,20 +1519,37 @@ a {
           align-items: center;
   padding: 0 1.5rem;
   position: relative; }
+  @media (max-width: 768px) {
+    .burger {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center; } }
 
 .burger__photo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 50px; }
-  .burger__photo__img {
-    max-width: 100%; }
+  @media (max-width: 480px) {
+    .burger__photo {
+      padding-top: 100px; } }
+
+.burger__img {
+  max-width: 100%; }
+  @media (max-width: 768px) {
+    .burger__img {
+      max-width: 80%; } }
 
 .btn--burger {
   display: inline-block;
   margin-left: 5px; }
 
 .burger__desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1539,6 +1562,11 @@ a {
           justify-content: space-between;
   height: 100%;
   margin-left: 15px; }
+  @media (max-width: 768px) {
+    .burger__desc {
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; } }
 
 .burger__order {
   display: -webkit-box;
@@ -1547,6 +1575,11 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+  @media (max-width: 768px) {
+    .burger__order {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .burger__price {
   color: #e35028;
@@ -1567,6 +1600,11 @@ a {
   .infoblock--ccal {
     background: transparent;
     top: 90%; }
+    @media (max-width: 768px) {
+      .infoblock--ccal {
+        top: 0;
+        right: 0;
+        left: auto; } }
 
 .infoblock__text {
   font-family: 'Gagalin-Regular'; }
