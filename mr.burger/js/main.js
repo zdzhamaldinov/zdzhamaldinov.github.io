@@ -19,3 +19,17 @@ function mobileMenuControl () {
 }
 
 mobileMenuControl();
+
+function verticalMenu () {
+  const teamItems = document.querySelectorAll('.team_item');
+  teamItems.forEach(item => {
+    const teamTitle = item.querySelector('.team__title');
+
+    teamTitle.onclick = function(e) {
+      e.preventDefault();
+      item.classList.toggle('team_item--checked');
+    };
+  });
+}
+
+verticalMenu();
