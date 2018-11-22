@@ -27,9 +27,18 @@ function verticalMenu () {
 
     teamTitle.onclick = function(e) {
       e.preventDefault();
+      itemClassRemove(item);
       item.classList.toggle('team_item--checked');
     };
   });
+
+  function itemClassRemove (checkItem) {
+    teamItems.forEach( item => {
+      if (item!=checkItem) {
+        item.classList.remove('team_item--checked');
+      }
+    });
+  }
 }
 
 verticalMenu();
