@@ -9,40 +9,6 @@
     }
 }
 
-.scroll-btn {
-    display: block;
-    cursor: pointer;
-    z-index: 99;
-    &--next, 
-    &--prev {
-        position: absolute;
-        top:50%;
-        transform: translate(-50%);
-
-    }
-
-    &--next {
-        right: -2rem;
-    }
-
-    &--prev {
-        left: -2rem;
-    }
-}
-
-.arrow-scroll {
-    width: 30px;
-    height: 18px;
-
-    &--left {
-        transform: rotate(-90deg);
-    }
-    &--right {
-        transform: rotate(90deg);
-    }
-}
-
-
 .slider {
     position: relative;
     display: flex;
@@ -164,4 +130,13 @@
 
 .infoblock__text {
     font-family: 'Gagalin-Regular';
+}
+
+.infoblock__weight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gagalin-Regular';
+    font-size: 20px;
 }

@@ -1,0 +1,42 @@
+
+.scroll-btn {
+    display: block;
+    cursor: pointer;
+    z-index: 99;
+    &--next, 
+    &--prev {
+        position: absolute;
+        top:50%;
+        transform: translate(-50%);
+    }
+
+    &--next {
+        right: -2rem;
+    }
+
+    &--prev {
+        left: -2rem;
+    }
+
+    &--hero {
+        margin-bottom: rem(35px);
+    
+        @include phones {
+            margin-bottom: rem(30px);
+        }
+
+    }
+}
+
+.arrow-scroll {
+    width: 30px;
+    height: 18px;
+    transform-origin: 50% 50% 0;
+
+    &--left {
+        transform: rotate(-90deg);
+    }
+    &--right {
+        transform: rotate(90deg);
+    }
+}

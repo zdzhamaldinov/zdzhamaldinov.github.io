@@ -13,7 +13,13 @@
     }
     
 }
-
+.logo {
+    z-index: 100;
+    &__svg {
+        width: 90px;
+        height: 70px;
+    }
+}
 .hero__text, .hero__img {
     width: 50%;
 
@@ -57,23 +63,5 @@
 
     @include phones {
         font-size: rem(48px);
-    }
-}
-
-.arrow {
-    margin-bottom: rem(35px);
-
-    @include phones {
-        margin-bottom: rem(30px);
-    }
-
-    &-svg {
-        width: 30px;
-        height: 18px;
-    }
-    &__link {
-        
-    display: block;
-    
     }
 }

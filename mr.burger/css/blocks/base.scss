@@ -66,6 +66,10 @@ overflow: hidden;
     text-align: left;
   }
 
+  &--burger {
+    color: #fff;
+  }
+
   @include tablets {
     margin-top: 0;
     margin-bottom: rem(20px);
