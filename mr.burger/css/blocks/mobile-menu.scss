@@ -33,7 +33,7 @@
 .nav__link--mobile {
     font-family: 'Ubuntu';
     font-weight: 400;
-    font-size: 24px;
+    font-size: rem(24px);
 }
 
 .nav__link--mobile::before {
@@ -65,8 +65,8 @@ display: none;
     display: block;
     
     &-svg {
-        width: 30px;
-        height: 30px;
+        width: rem(30px);
+        height: rem(30px);
         fill: #fff;
     }
 }

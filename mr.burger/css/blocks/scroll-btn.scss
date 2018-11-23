@@ -29,8 +29,8 @@
 }
 
 .arrow-scroll {
-    width: 30px;
-    height: 18px;
+    width: rem(30px);
+    height: rem(18px);
     transform-origin: 50% 50% 0;
 
     &--left {

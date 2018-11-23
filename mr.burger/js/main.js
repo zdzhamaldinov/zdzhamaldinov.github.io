@@ -1,8 +1,8 @@
 function mobileMenuControl () {
-  var mobileMenuIcon = document.querySelector('.hamburger-menu');
-  var closeMenu = document.querySelector('.close__link');
-  var mobileMenu = document.querySelector('.section.mobile-menu');
-  var mobileMenuItems = document.querySelectorAll('.nav__item--mobile')
+  let mobileMenuIcon = document.querySelector('.hamburger-menu');
+  let closeMenu = document.querySelector('.close__link');
+  let mobileMenu = document.querySelector('.section.mobile-menu');
+  let mobileMenuItems = document.querySelectorAll('.nav__item--mobile')
 
   mobileMenuIcon.onclick = function(e) {
     e.preventDefault();
@@ -18,6 +18,7 @@ function mobileMenuControl () {
   });
 }
 
+//мобильное меню
 mobileMenuControl();
 
 function verticalMenu () {
@@ -41,4 +42,27 @@ function verticalMenu () {
   }
 }
 
+//вертикальное меню в секции team
 verticalMenu();
+
+function horizontalMenu () {
+  const menuItems = document.querySelectorAll('.menu__item');
+  
+  menuItems.forEach(item => {
+    item.classList.toggle('menu__item--checked-phones');
+    item.onclick = function(e) {
+      itemClassRemove(item);
+      item.classList.toggle('menu__item--checked');
+    };
+  });
+  function itemClassRemove (checkItem) {
+    menuItems.forEach( item => {
+      if (item!=checkItem) {
+        item.classList.remove('menu__item--checked');
+        item.classList.remove('menu__item--checked-phones');
+      }
+    });
+  }
+}
+
+horizontalMenu();

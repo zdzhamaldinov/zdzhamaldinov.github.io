@@ -54,8 +54,8 @@
   margin-right: rem(5px);
 
   &-svg {
-    width: 13px;
-    height: 13px;
+    width: rem(13px);
+    height: rem(13px);
   }
 }
 
@@ -78,8 +78,8 @@
 
 
   &-svg {
-    width: 25px;
-    height: 20px;
+    width: rem(25px);
+    height: rem(20px);
     fill: #585858;
   }
   &-svg:hover {

@@ -28,7 +28,6 @@
   display: flex;
 
     &--checked {
-      
       .menu__link-text {
         color: #f9b43b;
       }
@@ -37,8 +36,23 @@
         width: rem(540px);
         background: #000;
         opacity: .5;
+
+        @include tablets {
+          width: 100%;
+        }
+
+        @include phones {
+          width: 100%
+        }
       }
   }
+  
+  &--checked-phones {
+    @include phones {
+      width: 0;
+    }
+  }
+  
 }
 
 .menu__link {
@@ -47,6 +61,7 @@
   font-family: "Gagalin-Regular";
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 
     &--img-1 {
       background: url(./img/menu-item-bg--1.png) center center / cover no-repeat;
