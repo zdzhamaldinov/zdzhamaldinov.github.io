@@ -49,17 +49,21 @@ function horizontalMenu () {
   const menuItems = document.querySelectorAll('.menu__item');
   
   menuItems.forEach(item => {
-    item.classList.toggle('menu__item--checked-phones');
     item.onclick = function(e) {
-      itemClassRemove(item);
+      itemClassControl(item);
       item.classList.toggle('menu__item--checked');
+      item.classList.toggle('menu__item--checked-phones');
     };
   });
-  function itemClassRemove (checkItem) {
+
+  function itemClassControl (checkItem) {
     menuItems.forEach( item => {
       if (item!=checkItem) {
         item.classList.remove('menu__item--checked');
-        item.classList.remove('menu__item--checked-phones');
+        item.classList.toggle('menu__item--checked-phones');
+      }
+      else{
+        item.classList.toggle('menu__item--checked-phones');
       }
     });
   }
