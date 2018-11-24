@@ -70,3 +70,57 @@ function horizontalMenu () {
 }
 
 horizontalMenu();
+
+function burgerSlider () {
+  let next = document.querySelector('.scroll-btn--next');
+  let prev = document.querySelector('.scroll-btn--prev');
+  let list = document.querySelector('.slider__list');
+  let items = list.querySelectorAll('.slider__item');
+
+  next.addEventListener('click', moveNext);
+  prev.addEventListener('click', movePrev);
+
+  let num =2;
+
+  function moveNext (e) {
+    e.preventDefault();
+    num++
+    if(num > items.length) {
+      num =1
+    }
+    setOrder();
+    list.classList.remove('is-reverse');
+    moveItem();
+  }
+  function movePrev(e) {
+    e.preventDefault();
+    num--;
+    if (num===0) {
+      num= items.length;
+    }
+    setOrder();
+    list.classList.add('is-reverse');
+    moveItem();
+  }
+
+  function setOrder () {
+    let key = num;
+    
+    for (const i of items) {
+      i.style.order = key;
+      key++;
+      if (key>items.length) {
+        key=1;
+      }
+    }
+  }
+
+  function moveItem() {
+    list.classList.remove('is-move');
+    setTimeout(()=>{
+      list.classList.add('is-move');
+    }, 1);
+  }
+  
+}
+burgerSlider();
