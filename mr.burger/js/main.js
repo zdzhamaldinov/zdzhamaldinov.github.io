@@ -124,3 +124,61 @@ function burgerSlider () {
   
 }
 burgerSlider();
+
+function formProcessing() {
+    const form = document.querySelector('#order-form');
+    const sendBtn = document.querySelector('#send-btn');
+
+    sendBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (formCheck(form)) {
+
+        var formData = new FormData();
+        formData.append('name', form.elements.name.value);
+        formData.append('phone', form.elements.phone.value);
+        formData.append('comment', form.elements.comment.value);
+        formData.append('to', 'my@site.com');
+
+        var xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(formData);
+        xhr.addEventListener('load', () => {
+          if (xhr.response['status'] == '1') {
+            alert('Сообщение отправлено!');
+          } else {
+            alert('Сообщение не отправлено!');
+          }
+          
+        });
+
+      } else {
+        console.log('Bad!')
+      }
+      
+    });
+
+    function formCheck(form) {
+      var valid = true;
+      
+      if (!fieldCheck(form.elements.name)) {
+        valid = false;
+      }
+      if (!fieldCheck(form.elements.phone)) {
+        valid = false;        
+      }
+      if (!fieldCheck(form.elements.comment)) {
+        valid = false;        
+      }
+      return valid;
+    }
+
+    function fieldCheck(field) {
+      console.log(field.validationMessage);
+      return field.checkValidity();
+      }      
+    
+}
+
+formProcessing();

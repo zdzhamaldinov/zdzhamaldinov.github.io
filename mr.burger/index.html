@@ -463,40 +463,40 @@
             <section class="section order">
                 <div class="container">
                     <div class="title title--order">Закажите доставку</div>
-                    <form action="#" class="order-form">
+                    <form id='order-form' class="order-form">
                         <div class="form__left">
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="name" required>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Телефон</div>
-                                    <input type="tel" placeholder="89212264923" class="form__input">
+                                    <input type="tel" placeholder="89212264923" pattern="[0-9]{11}" class="form__input" name="phone" required>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="street">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="hause">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Корпус</div>
-                                    <input type="tel" class="form__input">
+                                    <input type="text" class="form__input" name="part">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="flat">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="state">
                                 </label>
                             </div>
                         </div>
@@ -504,31 +504,31 @@
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__block-title">Комментарий</div>
-                                    <textarea type="text" class="form__input form__input--textarea"></textarea>
+                                    <textarea type="text" class="form__input form__input--textarea" name="comment" required></textarea>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
-                                    <input class="radio" type="radio"  name="radiobutton" value="check1">
+                                    <input class="radio" type="radio"  name="rb-money" value="cash">
                                     <span class="radio-custom"></span>
                                     <span>Потребуется сдача</span>
                                 </label>
                                 <label class="form__block">
-                                    <input class="radio" type="radio" name="radiobutton"  value="check2">
+                                    <input class="radio" type="radio" name="rb-money"  value="card">
                                     <span class="radio-custom"></span>
                                     <span>Оплата по карте</span>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label>
-                                    <input class="checkbox" type="checkbox" name="check_button" value="no_call">
+                                    <input class="checkbox" type="checkbox" name="call" value="no_call">
                                     <span class="checkbox-custom"></span>
                                     <span class="label">Не перезванивать</span>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label>
-                                        <input type="submit" class="btn btn-order" value="Заказать">
+                                        <input id="send-btn" type="submit" class="btn btn-order" value="Заказать">
                                 </label>
                                 <label>
                                     <input type="reset" class="btn btn-order btn-order--color-none" value="Сбросить">
