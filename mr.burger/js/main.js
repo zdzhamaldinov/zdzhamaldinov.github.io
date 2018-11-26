@@ -128,7 +128,13 @@ burgerSlider();
 function formProcessing() {
     const form = document.querySelector('#order-form');
     const sendBtn = document.querySelector('#send-btn');
-
+    const modalView = document.querySelector('.modal-wrap');
+    const modalText = document.querySelector('.modal__text');
+    const modalBtn = document.querySelector('.btn--modal');
+    modalBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalView.classList.toggle('modal-wrap--checked');
+    })
     sendBtn.addEventListener('click', (e) => {
       e.preventDefault();
 
@@ -142,19 +148,26 @@ function formProcessing() {
 
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
         xhr.send(formData);
         xhr.addEventListener('load', () => {
           if (xhr.response['status'] == '1') {
-            alert('Сообщение отправлено!');
+            modalText.textContent = 'Сообщение отправлено!';
+            modalView.classList.toggle('modal-wrap--checked');
+            
           } else {
-            alert('Сообщение не отправлено!');
+
+            modalText.textContent = 'Сообщение не отправлено!';
+            modalView.classList.toggle('modal-wrap--checked');
+            
           }
           
         });
 
       } else {
-        console.log('Bad!')
+
+        modalText.textContent = 'Заполните форму!';
+        modalView.classList.toggle('modal-wrap--checked');
       }
       
     });
