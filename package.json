@@ -1,0 +1,22 @@
+{
+  "name": "mr.burgers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdzhamaldinov/zdzhamaldinov.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdzhamaldinov/zdzhamaldinov.github.io/issues"
+  },
+  "homepage": "https://github.com/zdzhamaldinov/zdzhamaldinov.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,6 +1,5 @@
 .contact {
   position: relative;
-  background: url(./img/map.png) center center / cover no-repeat;
 }
 
 
@@ -12,6 +11,7 @@
   bottom: 0;
   padding: rem(15px) 0;
   width: 100%;   
+  z-index: 10;
 }
 
 .container--footer {

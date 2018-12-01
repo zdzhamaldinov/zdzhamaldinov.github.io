@@ -35,14 +35,15 @@
       .menu__text-wrapp {
         width: rem(540px);
         background: #000;
-        opacity: .5;
+        opacity: .75;
 
         @include tablets {
           width: 100%;
         }
 
         @include phones {
-          width: 100%
+          width: 100%;
+          
         }
       }
   }
@@ -50,6 +51,7 @@
   &--checked-phones {
     @include phones {
       width: 0;
+      overflow: hidden;
     }
   }
   

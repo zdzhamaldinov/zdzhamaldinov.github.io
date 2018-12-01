@@ -123,7 +123,32 @@ function burgerSlider () {
   }
   
 }
+
+//слайдерна флексах. на ордерах
 burgerSlider();
+
+/*
+function modalControl () {
+  var review = document.querySelector('.review');
+  var modalWrapp = review.querySelector('.modal-wrap');
+  var modalClose = review.querySelector('.modal__close-btn');
+  
+  review.addEventListener('click', (e) => {
+    var btnView = e.target.find('btn--reviewe');
+    console.log(btnView);
+    
+  });
+
+
+
+  modalClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalWrapp.classList.toggle('modal-wrap--checked');
+  });
+}
+
+modalControl();
+*/
 
 function formProcessing() {
     const form = document.querySelector('#order-form');
@@ -194,4 +219,174 @@ function formProcessing() {
     
 }
 
+//Обработка формы
 formProcessing();
+
+//Скролл страниц
+$(document).ready(function () {
+  var iScrollPos = 0;
+
+$(window).on('scroll',function () {
+  var iCurScrollPos = $(this).scrollTop();
+  if (iCurScrollPos > iScrollPos) {
+      var $this = $(this),
+      container = $this.closest('wrapp'),
+      items = container.find('section'),
+      activeSlide = items.filter('active'),
+      reqItem = activeSlide.next(),
+      reqIndex = reqItem.index(),
+      list = container.find('maincontainer'),
+      duration = 500;
+      if (reqItem.lenght) {
+          list.animate ({
+              'whell' : -reqIndex * 100 + 'vh'
+          },duration, function () {
+              activeSlide.removeClass('active');
+              reqItem.addClass('active');
+          });
+          
+      }
+  } else {
+      
+  }
+  iScrollPos = iCurScrollPos;
+});
+});
+
+
+
+function mapContact () {
+
+  var placemarks = [
+    {
+      latitude: 59.954146,
+      longitude: 30.315665,
+      hintContent: 'Александровские парк, 7', //можно применить html и css
+      balloonContent: 'Александровские парк, 7' //можно применить html и css
+    },    
+    {
+      latitude: 59.944869,
+      longitude: 30.300645,
+      hintContent: 'набережная Маркова, 4',
+      balloonContent: 'набережная Маркова, 4'
+    },    
+    {
+      latitude: 59.942301,
+      longitude: 30.304100,
+      hintContent: 'Биржевой проезд, 2',
+      balloonContent: 'Биржевой проезд, 2'
+    },    
+    {
+      latitude: 59.941967,
+      longitude: 30.317476,
+      hintContent: '<Миллионная улица,35',
+      balloonContent: 'Миллионная улица,35'
+    }
+  ],
+  geoObjects = [];
+
+  ymaps.ready(init);
+  function init(){
+      var myMap = new ymaps.Map("map", {
+          center: [59.939095, 30.315868],
+          zoom: 12,
+          controls: ['zoomControl'],
+          behaviors: ['drag']                       
+      });
+
+      
+      for (var i =0; i<placemarks.length; i++) {
+        geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude], {
+          hintContent: placemarks[i].hintContent,
+          balloonContent: placemarks[i].balloonContent
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/map-marker.png', 
+          iconImageSize: [46,57],
+          iconImageOffset: [-23,-57]
+          //использование спрайтов
+          //iconImageClipRect: [[444,0], [23,433]]
+  
+        });
+      };
+
+      //Кластеризатор ---> собирает в один бургер
+      var clusterer = new ymaps.Clusterer({
+        clusterIcons:[
+          {
+            href: './img/burgers.png', 
+            size: [140,100],
+            offset: [-50,-50]
+          }
+        ],
+        clusterIconContentLayout: null
+      });
+
+      myMap.geoObjects.add(clusterer);
+      clusterer.add(geoObjects);
+
+  }
+}
+
+mapContact ();
+
+
+function onePageScroll () {
+  var section = $('.section');
+  var display = $('.maincontainer');
+  let inScroll = false;
+  
+  
+  const performTransition = sectionEq => {
+    const position = `${sectionEq * -100}%`;
+    const mouseInertionIsFinished = 300;
+    const transitionFinished = 500;
+    if (inScroll == false) {
+      inScroll = true;
+
+      display.css({
+        transform: `translateY(${position})`
+      });
+  
+      section
+        .eq(sectionEq)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+
+      setTimeout (() => {
+        inScroll = false;
+      }, transitionFinished + mouseInertionIsFinished);
+
+    }
+  }
+
+  const scrollToSection = (direction) => {
+    const activeSection = section.filter('.active');
+    const prevSection = activeSection.prev();
+    const nextSection = activeSection.next();
+
+    if (direction =='up' && prevSection.length) {
+      performTransition(prevSection.index());
+    }
+    if (direction =='down' && nextSection.length) {
+      performTransition(nextSection.index());
+    }
+    
+  }
+
+  $(document).on('wheel', (e) => {
+    const deltaY = e.originalEvent.deltaY;
+    if (deltaY > 0) {
+      scrollToSection('down');
+      
+    }
+    if (deltaY <= 0) {
+      scrollToSection('up');
+    }
+
+  });
+
+}
+
+onePageScroll ();
