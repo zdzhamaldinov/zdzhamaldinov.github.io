@@ -1,17 +1,17 @@
 .modal-wrap {
-    height: 100vh;
-    width: 100%;
     position: absolute;
     background: rgba(#000, .88);
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
     
-    &--checked {
-        display: block;
+    &.checked {
+        display: flex;
     }
 }
 
@@ -65,8 +65,15 @@
 }
 
 .modal__close-btn {
+    display: block;
     position: absolute;
     right: 5%;
     top: 5%;
 
+}
+
+.close-icon__svg {
+    height: 18px;
+    width: 18px;
+    fill: red;
 }

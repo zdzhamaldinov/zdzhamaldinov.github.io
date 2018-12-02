@@ -127,38 +127,16 @@ function burgerSlider () {
 //слайдерна флексах. на ордерах
 burgerSlider();
 
-/*
-function modalControl () {
-  var review = document.querySelector('.review');
-  var modalWrapp = review.querySelector('.modal-wrap');
-  var modalClose = review.querySelector('.modal__close-btn');
-  
-  review.addEventListener('click', (e) => {
-    var btnView = e.target.find('btn--reviewe');
-    console.log(btnView);
-    
-  });
-
-
-
-  modalClose.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalWrapp.classList.toggle('modal-wrap--checked');
-  });
-}
-
-modalControl();
-*/
-
 function formProcessing() {
-    const form = document.querySelector('#order-form');
-    const sendBtn = document.querySelector('#send-btn');
-    const modalView = document.querySelector('.modal-wrap');
-    const modalText = document.querySelector('.modal__text');
-    const modalBtn = document.querySelector('.btn--modal');
+    const order = document.querySelector('.order');
+    const form = order.querySelector('#order-form');
+    const sendBtn = order.querySelector('#send-btn');
+    const modalView = order.querySelector('.modal-wrap');
+    const modalText = order.querySelector('.modal__text');
+    const modalBtn = order.querySelector('.btn--modal');
     modalBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      modalView.classList.toggle('modal-wrap--checked');
+      modalView.classList.toggle('checked');
     })
     sendBtn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -173,17 +151,17 @@ function formProcessing() {
 
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
         xhr.send(formData);
         xhr.addEventListener('load', () => {
           if (xhr.response['status'] == '1') {
             modalText.textContent = 'Сообщение отправлено!';
-            modalView.classList.toggle('modal-wrap--checked');
+            modalView.classList.toggle('checked');
             
           } else {
 
             modalText.textContent = 'Сообщение не отправлено!';
-            modalView.classList.toggle('modal-wrap--checked');
+            modalView.classList.toggle('checked');
             
           }
           
@@ -192,7 +170,7 @@ function formProcessing() {
       } else {
 
         modalText.textContent = 'Заполните форму!';
-        modalView.classList.toggle('modal-wrap--checked');
+        modalView.classList.toggle('checked');
       }
       
     });
@@ -222,12 +200,14 @@ function formProcessing() {
 //Обработка формы
 formProcessing();
 
+
 //Скролл страниц
 $(document).ready(function () {
   var iScrollPos = 0;
 
 $(window).on('scroll',function () {
   var iCurScrollPos = $(this).scrollTop();
+
   if (iCurScrollPos > iScrollPos) {
       var $this = $(this),
       container = $this.closest('wrapp'),
@@ -237,6 +217,7 @@ $(window).on('scroll',function () {
       reqIndex = reqItem.index(),
       list = container.find('maincontainer'),
       duration = 500;
+      
       if (reqItem.lenght) {
           list.animate ({
               'whell' : -reqIndex * 100 + 'vh'
@@ -328,6 +309,8 @@ function mapContact () {
   }
 }
 
+
+//Карта
 mapContact ();
 
 
@@ -390,3 +373,22 @@ function onePageScroll () {
 }
 
 onePageScroll ();
+
+
+$(document).ready( function () {
+  var review = $('.review');
+  var modalWrapp = $('.modal-wrap', review);
+  
+  review.on('click', function(e) {
+    
+    if ($(e.target).is('.btn--reviewe') == true) {
+      modalWrapp.toggleClass('checked');
+    }
+    
+    if ($(e.target).is('.close-icon__svg') == true) {
+      console.log(e.target);
+      modalWrapp.toggleClass('checked');
+    }
+  });
+
+});
