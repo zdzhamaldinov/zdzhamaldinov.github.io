@@ -142,6 +142,10 @@
             left: auto;
         }
     }
+
+    &__content {
+        position: relative;
+    }
 }
 
 .infoblock__text {

@@ -358,16 +358,33 @@ function onePageScroll () {
     
   }
 
-  $(document).on('wheel', (e) => {
-    const deltaY = e.originalEvent.deltaY;
-    if (deltaY > 0) {
-      scrollToSection('down');
-      
-    }
-    if (deltaY <= 0) {
-      scrollToSection('up');
-    }
+  $(document).on({
+    wheel: (e) => {
+      const deltaY = e.originalEvent.deltaY;
 
+      const direction = deltaY > 0 ? "down" : "up";
+      scrollToSection(direction);
+    
+  },
+  keydown: (e) => {
+    switch (e.keyCode) {
+      case 40:
+        scrollToSection("down");
+        break;
+      case 38:
+        scrollToSection("up");
+        break;
+
+    }
+  }
+  });
+
+  $("[data-scroll-to]").on('click', (e) => {
+    e.preventDefault();
+
+    const target = $(e.currentTarget).attr("data-scroll-to");
+    
+    performTransition(target);
   });
 
 }

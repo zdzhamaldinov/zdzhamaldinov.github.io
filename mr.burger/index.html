@@ -21,13 +21,13 @@
                         <div class="header__btns">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="0" class="nav__link">О нас</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="1" class="nav__link">Бургеры</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="2" class="nav__link">Команда</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="3" class="nav__link">Меню</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="4" class="nav__link">Отзывы</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="5" class="nav__link">Как мы работаем</a></li>
+                                    <li class="nav__item"><a href="#" data-scroll-to="6" class="nav__link">Контакты</a></li>
                                 </ul>
                             </nav>
                             <a href="#" class="btn btn--header">Заказать</a>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="scroll">
-                        <a href="#" class="scroll-btn scroll-btn--hero">
+                        <a href="#" data-scroll-to="1" class="scroll-btn scroll-btn--hero">
                             <svg class="arrow-scroll">
                                 <use xlink:href="./icons/sprite.svg#arrow-scroll-icon"></use>
                             </svg>
@@ -237,12 +237,88 @@
                             </ul>
                         </div>
                         <div class="infoblock">
-                            <div class="infoblock__pic">
-                                <svg width="46" height="46" >
-                                    <use xlink:href="./icons/sprite.svg#burger-icon"></use>
-                                </svg>
+                            <div class="infoblock__content">
+                                <div class="infoblock__pic">
+                                    <svg width="46" height="46" >
+                                        <use xlink:href="./icons/sprite.svg#burger-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="infoblock__text">Состав</div>
                             </div>
-                            <div class="infoblock__text">Состав</div>
+                            <div class="composition">
+                                <div class="composition__contant">
+                                    <ul class="composition__list">
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="composition__img">
+                                                    <use xlink:href="./icons/sprite.svg#cucumber-icon"></use>
+                                            </svg>
+                                            <div class="composition_desc">
+                                                <div class="composition__name">Овощи</div>
+                                                <div class="composition__weigth">200 г</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn--modal modal__close-btn modal--composition">
+                                        <svg class="close-icon__svg" >
+                                            <use xlink:href="./icons/sprite.svg#close-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="infoblock infoblock--ccal">
                             <div class="infoblock__pic calories__pic">
@@ -613,13 +689,13 @@
     <div class="section mobile-menu">
         <div class="container container--mobile">
             <ul class="nav__list nav__list--mobile">
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">О нас</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Команда</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Бургеры</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Меню</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Отзывы</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Заказать</a></li>
-                <li class="nav__item nav__item--mobile"><a href="#" class="nav__link nav__link--mobile">Контакты</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="0" class="nav__link nav__link--mobile">О нас</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="1" class="nav__link nav__link--mobile">Команда</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="2" class="nav__link nav__link--mobile">Бургеры</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="3" class="nav__link nav__link--mobile">Меню</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="4" class="nav__link nav__link--mobile">Отзывы</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="5" class="nav__link nav__link--mobile">Заказать</a></li>
+                <li class="nav__item nav__item--mobile"><a href="#" data-scroll-to="6" class="nav__link nav__link--mobile">Контакты</a></li>
             </ul>
         </div>
     </div>

@@ -1,0 +1,65 @@
+.composition {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(#fff, .85);
+  width: 300%;
+  padding: 15%;
+  border-radius: 5px;
+
+  @include tablets {
+    width: 380%;
+  }
+
+  @include phones {
+    width: 300%;
+  }
+}
+
+.composition__contant {
+  display: flex;
+  justify-content: space-between;
+}
+
+.composition__list {
+  color: #000;
+
+  @include tablets {
+    
+    width: 70%;
+  }
+}
+
+.composition__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.composition__img {
+  width: 15%;
+  height: 37px;
+}
+
+.composition_desc {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.modal--composition {
+  display: none;
+
+  @include tablets {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0;
+  }
+  
+}
+.composition__name {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+}
