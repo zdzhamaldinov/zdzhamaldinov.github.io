@@ -6,6 +6,7 @@
   width: 300%;
   padding: 15%;
   border-radius: 5px;
+  display: none;
 
   @include tablets {
     width: 380%;
@@ -59,6 +60,20 @@
   }
   
 }
+
+.infoblock--composition {
+
+  &:hover {
+    
+    background: #bd6a21;
+    cursor: pointer;
+    
+    .composition {
+      display: block;
+    }
+  }
+}
+
 .composition__name {
   font-family: 'Ubuntu';
   font-weight: 700;

@@ -317,6 +317,8 @@ mapContact ();
 function onePageScroll () {
   var section = $('.section');
   var display = $('.maincontainer');
+  var sideMenu = $('.sideMenu__item');
+
   let inScroll = false;
   
   
@@ -332,6 +334,12 @@ function onePageScroll () {
       });
   
       section
+        .eq(sectionEq)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+  
+      sideMenu
         .eq(sectionEq)
         .addClass('active')
         .siblings()
@@ -390,6 +398,25 @@ function onePageScroll () {
 }
 
 onePageScroll ();
+
+
+$(document).ready( function () {
+  var review = $('.review');
+  var modalWrapp = $('.modal-wrap', review);
+  
+  review.on('click', function(e) {
+    
+    if ($(e.target).is('.btn--reviewe') == true) {
+      modalWrapp.toggleClass('checked');
+    }
+    
+    if ($(e.target).is('.close-icon__svg') == true) {
+      console.log(e.target);
+      modalWrapp.toggleClass('checked');
+    }
+  });
+
+});
 
 
 $(document).ready( function () {
